@@ -1,0 +1,28 @@
+- Necessary external utilities for running scripts -
+
+
+nmcli/ip/ping  base utils for working with net
+
+-----------
+dir[scripts]
+name:               pkgs:                   description:
+ssh_conn.sh         sshpass                 login to the switch with a password
+creating_bridge.sh  bridge-utils 1.7.1-1    contains utilities for configuring the Linux Ethernet bridge
+deploy              python3.11-venv         create pyvirt env
+-----------
+
+-----------
+dir[poe] - does not have
+-----------
+
+-----------
+dir[netproto]
+name:                               pkgs:                   description:
+auth_and_basequery_via_api.py       curl                    making requests via HTTP
+generate_sslcert.sh                 openssl                 used generate ssl certs
+snmp.sh                             snmp                    SNMP applications are a collection of command line clients
+                                                            for issuing SNMP requests to agents.
+objects.py                          lldpd
+                                    nmap                    net scanner
+                                    jq                      command-line JSON processor
+-----------
